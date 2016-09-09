@@ -1,0 +1,46 @@
+{
+  "precache": false,
+
+  "log": {
+    "logEvents":     false,
+    "logEventNames": false,
+    "logPrecache":   false
+  },
+
+  // Enables runtime tests to validate that ResolveDataStore is not modified by directives or controllers
+  // - common_components/v2/graphs/groupsScatterPlot/groupsScatterPlot.js
+  // - common_components/v2/graphs/groupsLineGraph/groupsLineGraph.js
+  // - common_components/v2/services/API/data/ApiDataStore.js
+  "tests": {
+    "assertReadOnly": false
+  },
+
+  "homepage": {
+    "redirect": true // index.html - if true redirect directly to login page
+  },
+
+  "features": {
+    "data": {
+      "computedMeasureFromShareClass": true
+    },
+    "profile": {
+      "hideDataRoomTab":       false,
+      "removeSocialFeatures":  false,
+      "removeLimitedPartners": false
+    },
+    "investor": {
+      "showIndustryDistributionChartTab": false,
+      "exposeApiEndpoints":               false
+    },
+    "searchFilters": {
+      "delayedKeywordTimeout":  1000,
+      "hideMapSearch":          false,
+      "showExternalFundsLabel": true,
+      "showClientOwned":        true,
+      "showNestedStrategy":     true
+    },
+    "scatterGraph": {
+      "highlightClientOwnedFunds": false
+    }
+  }
+}

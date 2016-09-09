@@ -1,0 +1,21 @@
+/**
+ *  This is an Example.json configuration file
+ */
+{
+  "_JavascriptOnlyVariable": "invalid css string",
+  "$black":  "#000000",
+  "$white":  "#FFFFFF",
+  "$blue": {
+    "dark": {
+      "gray": "#223e59",
+      "sky":  "#59a8d9"
+    }
+  },
+  "$element": {
+    "a": {
+      "background-color": "$white",
+      "color":            "$blue-dark-gray",
+      "color-hover":      "$blue.dark.sky"
+    }
+  }
+}

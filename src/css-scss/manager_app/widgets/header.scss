@@ -1,0 +1,9 @@
+@import "../../common/variables/all";
+
+/////// HEADER ------------------------------------------------------------------------------------------------------
+header {
+  float: left;
+  font-weight: 300;
+  background: url(/assets/whitelabel/images/manager_app/bg.png) $white;
+  width: 100%;
+}

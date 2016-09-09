@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>     <html ng-app="edgefolio.enterprise.documentation" lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>        <html ng-app="edgefolio.enterprise.documentation" lang="en" class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>        <html ng-app="edgefolio.enterprise.documentation" lang="en" class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!--><html ng-app="edgefolio.enterprise.documentation" lang="en" class="no-js">                  <!--<![endif]-->
+
+<head ng-controller="RootController">
+  <base href="/enterprise/documentation/"/>
+  <title ng-bind="($state.$current.$data.title) ? 'Edgefolio | ' + $state.$current.$data.title : 'Edgefolio'">Edgefolio | Enterprise</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=0.8, maximum-scale=2"><!-- TODO: work out correct viewport settings -->
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <meta property="og:url"           content="https://edgefolio.com"/>
+  <meta property="og:title"         content="Edgefolio is a platform empowering all stakeholders in the Hedge Fund industry." />
+  <meta property="og:description"   content="We are bringing the modern dynamics of the web to a traditionally conservative industry, and are leveraging technology to make its data beautiful. Investors are empowered by Edgefolio being secure and compliant, whilst allowing them full anonymity. Hedge Funds are provided with a scalable marketing platform and a highly sophisticated investor relations portal, within the confines of the AIFMD." />
+  <meta property="og:image"         content="https://edgefolio.com/assets/homepage/img/linkedin_thumb.png" />
+  <meta name="dcterms.rightsHolder" content="Copyright (c) 2015 Edgefolio AS">
+
+  <!-- Gulp includes injected from index-gulp-includes-css.txt and webapp/gulp/config.js::global.paths["inject"] -->
+  <!-- START gulp-inject css -->
+  <!-- END gulp-inject css -->
+
+  <!-- START gulp-inject GulpConfig -->
+  <script>
+  window.GulpConfig = {
+    environment: 'test',
+    appName:     'enterpise',
+    buildDate:   'Mon Feb 29 2016 22:28:50 GMT+0000 (GMT)',
+    branch:      'core/v3/master',
+    version:     '25ee69d422ff54eb9aad094223942f55a87288b0'
+  }
+  </script>
+  <!-- END gulp-inject GulpConfig -->
+</head>
+<body id="investor-app" ng-cloak ng-controller="RootController">
+
+  <div class="full-screen-footer-wrapper">
+    <loading class="loading-background animate"></loading>
+    <loading class="loading-bar        animate"></loading>
+
+    <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="header-edgefolio">
+      <div class="container">
+        <div class="header-logo"><a href="/enterprise/documentation/"><span class="image-logo-header"></span></a></div>
+        <div class="header-user-panel">
+          <notifications-dropdown user="userDetails"></notifications-dropdown>
+          <nav-user-login></nav-user-login>
+        </div>
+        <div class="header-menu">
+          <nav ui-view="header-menu-top"></nav>
+        </div>
+      </div>
+    </header>
+    <nav ui-view="header-menu-bottom"></nav>
+
+
+    <main class="container" ui-view ng-cloak></main>
+    <div class="full-screen-footer-space"></div>
+  </div>
+
+  <footer>
+    <div id="api-form-buttons-footer"></div>
+    <nav ui-view="footer-menu"></nav>
+    <div class="container">
+      <a href="/" class="edgefolio-icon"><span class="image-logo-footer"></span></a>
+      <p class="copyright">Copyright Edgefolio AS 2015</p>
+      <p class="terms">
+        <a analytics-on="click" analytics-event="read-terms" ui-sref="root.terms">Terms and Conditions</a>
+        -
+        <a href="mailto:admin@edgefolio.com">admin@edgefolio.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="javascript-includes">
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAnrnyDTJtTFg32rh0bMLkjjsTIG1Aveec&sensor=false"></script>
+    <script type="text/javascript" src="/assets/common_components/v2/services/Analytics/analytics-embed-codes.js"></script>
+    <script type="text/javascript" src="/assets/bower_components/cookiebanner/dist/cookiebanner.min.js" id="cookiebanner"></script>
+
+    <!-- Gulp includes injected from webapp/gulp/config.js::global.paths["inject"] -->
+    <!-- START gulp-inject javascript -->
+      <!-- END gulp-inject javascript -->
+  </div>
+
+</body>
+</html>

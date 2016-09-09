@@ -1,0 +1,16 @@
+{
+  "ambientDependencies": {
+    "Q": "github:DefinitelyTyped/DefinitelyTyped/q/Q.d.ts#aae1368c8ee377f6e9c59c2d6faf1acb3ece7e05",
+    "angular": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular.d.ts#3bebbe1baee04846cc46ed7249e8117e4cd7c7ff",
+    "chai": "github:DefinitelyTyped/DefinitelyTyped/chai/chai.d.ts#9c25433c84251bfe72bf0030a95edbbb2c81c9d5",
+    "d3": "github:DefinitelyTyped/DefinitelyTyped/d3/d3.d.ts#c09bd959175c3ca80ef4a92bcbac93307f266c12",
+    "datejs": "github:DefinitelyTyped/DefinitelyTyped/datejs/datejs.d.ts#4bb02b27a419210c0aa5fe69a2da9337d9c14bc9",
+    "gulp": "github:DefinitelyTyped/DefinitelyTyped/gulp/gulp.d.ts#052725d74978d6b8d7c4ff537b5a3b21ee755a49",
+    "karma": "github:DefinitelyTyped/DefinitelyTyped/karma/karma.d.ts#02dd2f323e1bcb8a823269f89e0909ec9e5e38b5",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#df712b17fa4737fdb3eb52118b1465cd3be81a1d",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#1c56e368e17bb28ca57577250624ca5bd561aa81"
+  },
+  "dependencies": {
+    "moment": "github:typed-typings/npm-moment#a4075cd50e63efbedd850f654594f293ab81a385"
+  }
+}

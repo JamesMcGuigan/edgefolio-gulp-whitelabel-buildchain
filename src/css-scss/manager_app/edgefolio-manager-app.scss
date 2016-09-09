@@ -1,0 +1,8 @@
+// ruby-compass clean compile times:           ~1min
+// libsass (written in C) clean compile times: ~10s - order of magnitude faster, but requires removing compass as a dependency
+// investor_app uses reset.css after boostrap and without normalize.css
+
+// Via GULP: @import: global.dest["homepage"].css + 'common/base.css',
+
+@import "../common/variables/all";
+@import 'widgets/header';

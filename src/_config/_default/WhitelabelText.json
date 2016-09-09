@@ -1,0 +1,9 @@
+{
+	"buttons": {
+		"fund": {
+			"connect": "Connect with fund",
+			"connected": "Connection request sent",
+			"watchlist": "Add to Watchlist"
+		}
+	}
+}

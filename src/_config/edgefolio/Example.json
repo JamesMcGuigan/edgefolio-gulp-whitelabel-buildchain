@@ -1,0 +1,8 @@
+// src/_config/edgefolio/Example.json only needs to contain the minimum number of overrides
+{
+  "$blue": {
+    "dark": {
+      "sky": "$white"
+    }
+  }
+}

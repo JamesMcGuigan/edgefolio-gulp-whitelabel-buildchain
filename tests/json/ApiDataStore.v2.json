@@ -1,0 +1,14 @@
+{
+   "userDetails" : {
+      "country_code" : null,
+      "last_login" : "2015-07-10T11:05:49.136669Z",
+      "management_company_id" : "110",
+      "city" : null,
+      "redirect_url" : "/dashboard/",
+      "date_joined" : "2015-06-29T16:19:00.250973Z",
+      "company_name" : "Clairinvest",
+      "email" : "manager@wisemanagement.com",
+      "last_name" : "Manager",
+      "first_name" : "Wiser"
+   }
+}

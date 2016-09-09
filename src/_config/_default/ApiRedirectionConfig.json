@@ -1,0 +1,5 @@
+{
+  "_server":         "https://edgefolio-development.com",
+  "_urlRegexp":      "^/api/(?!user/)",
+  "_locationRegexp": "/investor-app/"
+}

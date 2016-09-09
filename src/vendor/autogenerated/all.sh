@@ -1,0 +1,1 @@
+src/vendor/jsclass/build-jsclass.sh

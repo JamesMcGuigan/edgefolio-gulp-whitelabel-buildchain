@@ -1,0 +1,83 @@
+{
+  "$orchid":         "#487655",
+
+  "$blue-dark-gray": "#6C9FA2",
+  "$blue-dark-ulgy": "#487655",
+  "$blue-gray":      "#666868",
+  "$blue-light":     "#6C9FA2",
+  "$brand":          "#024A85",
+
+  "$background-table-odd":  "#E9E9E9",
+  "$background-table-even": "#F6F6F6",
+
+  "$font-family-serif":  "'Oswald', 'Helvetica Neue', Arial, sans-serif",
+  "$font-family-base":   "$font-family-serif",
+
+
+  "$element": {
+    "h1": {
+      "color": "$blue-dark-ulgy"
+    },
+    "h2": {
+      "color": "$gray-heading"
+    },
+    "h3": {
+      "color": "$gray-heading"
+    },
+    "h4": {
+      "color": "$gray-heading"
+    },
+    "a": {
+      "font-weight": 300
+    },
+    "button": {
+      "background-color": "$blue-dark-ulgy",
+      "color":            "$white"
+    },
+    "header": {
+      "background": "$white-impure",
+      "color":      "$blue-light",
+      "padding":    "40px 30px 40px 30px"
+    }
+  },
+
+  "$whitelabel": {
+    "menu": {
+      "font-weight": 300,
+      "color":       "$black",
+      "color-hover": "$black"
+    },
+    "notifications": {
+      "icon-count": {
+        "background": "$blue-dark-ulgy"
+      }
+    },
+    "selectbox": {
+      "color": "$blue-dark-ulgy"
+    },
+    "full-screen-footer-wrapper": {
+      "background-color": "$blue-dark-ulgy",
+      "color":            "$blue-light"
+    },
+    "google-map-legend": {
+      "background-color": "$blue-dark-ulgy"
+    },
+    "add-to-watchlist-panel": {
+      "background-color": "#FBFBFB",
+      "color":            "$blue-dark-ulgy",
+      "font-weight":       300
+    },
+    "breadcrumbs-header": {
+      "background-color": "$white-subtle",
+      "border-bottom":    "none"
+    }
+  },
+
+  "distributionGraph": {
+    "light": "#DDDDDD",
+    "dark":  "#6C9FA2"
+  },
+  "densityGraph": {
+    "gradient": "#01C176"
+  }
+}

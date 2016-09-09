@@ -1,0 +1,44 @@
+@import "../variables/all";
+//@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid";
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework";
+
+@media print {
+  @page {
+    size:   210mm 297mm;
+    margin: 10mm;
+  }
+  html, body, header, footer, main, .print-width {
+    width: 1075px;
+    margin:  0    !important;
+    padding: 0    !important;
+    float:   none !important;
+  }
+}
+@media print {
+  *    { transition:  none !important;              } // BUGFIX: Print stylesheets fail to load without this line
+  body { font-family: sans-serif; font-size:  10pt; } // BUGFIX: Lato prints poorly
+
+  header {
+    margin-bottom: 20px;
+    .header-menu,
+    .header-user-panel {
+      display: none !important;
+    }
+  }
+  footer  { display: none !important; }
+  .full-screen-footer-space { display: none !important; }
+
+  loading           { display: none !important; }
+  horizontal-spacer { display: none !important; }
+
+  main {
+    margin: 0 !important;
+    width: 100%;
+  }
+
+  @include make-grid(lg);
+  @include make-grid(md);
+  @include make-grid(sm);
+  @include make-grid(xs);
+}
+
