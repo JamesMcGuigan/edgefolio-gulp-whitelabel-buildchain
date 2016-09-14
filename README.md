@@ -15,19 +15,36 @@ Whitelabel gulp buildchain for Edgefolio's production angular apps
 - [MODEL_LAYER.md](MODEL_LAYER.md) - Enterprise ORM Model Layer -> https://github.com/JamesMcGuigan/edgefolio-orm
 
 
-## Installation 
+## Overview 
 
+#### Installation
 ```
 npm install
 bower install
-gulp clean
-gulp test-unit
-gulp production                      # default production build (--whitelabel=edgefolio)
-gulp production --whitelabel=thales  # whitelabel production build
-gulp                                 # development build with file watchers
+typings install
 ```
 
+#### Top level build commands
+```
+gulp icon-sass                       # autogenerate sass variables/classes from image directory
 
+gulp clean                           # remove generated files
+gulp test-unit                       # compile test resources and run karma tests   
+gulp production                      # default production build (--whitelabel=edgefolio)
+gulp production --whitelabel=thales  # whitelabel production build
+gulp staging                         # staging build - concatinated but not minified assets
+gulp development                     # development build - one HTTP request per file and no template caching or CSS image preloading
+gulp watch-development               # run file watchers to recompile any generated assets when file dependancies change
+gulp                                 # default task: gulp development watch-development               
+```
+
+#### Lint support
+```
+gulp lint-jsl 
+gulp lint-eslint
+gulp lint-jshint
+gulp lint-sass
+```
 
 ## Generated Code
 
