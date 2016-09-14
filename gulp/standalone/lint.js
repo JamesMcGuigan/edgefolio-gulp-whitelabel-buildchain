@@ -63,7 +63,8 @@ gulp.task('jshint', function() {
  *
  * @conf webapps/.jsl.conf
  */
-gulp.task('lint-js', ['jsl']);
+gulp.task('lint-js',  ['jsl']);
+gulp.task('lint-jsl', ['jsl']);
 gulp.task('jsl', function() {
   var include_files = _(global.config["minify-js"]).values().pluck('extractIncludes').flatten().value();
   var includes = util.mapIncludes(util.extractIncludes(include_files));
